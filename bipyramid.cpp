@@ -12,16 +12,13 @@ void display() {
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
-    //glMatrixMode(GL_PROJECTION);
-    //glLoadIdentity();
     glOrtho(-2.0f, 2.0f, -2.0f, 2.0f, -2.0f, 2.0f);
-    //glMatrixMode(GL_MODELVIEW);
 
     float color_one[][4] = {{1.0f,0.0f,0.0f,0.5f}, {0.5f,0.5f,0.1f,0.5f}, {0.0f,1.0f,0.0f,0.5f}, {0.5f,0.5f,1.0f,0.5f}, {0.0f,0.0f,1.0f,0.5f}}; // Color for top half o pyramid
     float color_two[][4] = {{0.5f,0.5f,0.1f,0.5f}, {0.0f,1.0f,0.0f,0.5f}, {0.5f,0.5f,1.0f,0.5f}, {0.0f,0.0f,1.0f,0.5f}, {1.0f,0.0f,0.0f,0.5f}}; // Color for bottom half o pyramid
     float pentagon_points[7][3] {{},{},{},{},{},{0.0,3.0,0.0},{0.0,-3.0,0.0}};
     
-    glRotatef(30.0f, 1.0f, 1.0f, 1.0f);  //Transformations
+    glRotatef(40.0f, 1.0f, 1.0f, 1.0f);  //Transformations
     glScalef(0.5f,0.5f,0.5f);
 
 
